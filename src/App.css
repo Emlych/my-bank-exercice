@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+:root {
+  --darkgrey: #273338;
+  --lightgrey: #eceff1;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  background-color: var(--darkgrey);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  padding: 20px 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userprofile {
+  display: flex;
+  align-items: center;
+}
+.username {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.usericon svg {
+  width: 30px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 6px;
+}
+.accounts {
+  background-color: var(--lightgrey);
+}
+.account {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.account__general {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+.account__general--name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.account__general--balance {
+  font-size: 20px;
+}
+.account__details {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.account__details--line {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
 }
