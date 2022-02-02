@@ -22,16 +22,15 @@ const Account = ({
       <div className="account__details">
         {operations.map((operation, index) => {
           return (
-            <div className="account__details--line">
+            <div className="account__details--line" key={index}>
               <div>{operation.date}</div>
               <div>{operation.description}</div>
               <div>{operation.amount} €</div>
             </div>
           );
         })}
+        <Button />
       </div>
-
-      <Button />
     </div>
   );
 };
